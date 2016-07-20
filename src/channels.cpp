@@ -457,7 +457,7 @@ bool RawMediaStream::WriteData(const BYTE *data,
             cout << "silence write failed!" << endl;
             return false;
         }
-        CollectAverage(silence, written);
+        // CollectAverage(silence, written);
     }
     written = m_channel->GetLastWriteCount();
     // cout << "wrote " << written << endl;
